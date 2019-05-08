@@ -188,7 +188,6 @@ class WIDERFaceDetection(data.Dataset):
                 self.label_ids.append( bboxes )
                 #yield DATA(os.path.join(self.path_to_image, directory,  im_name + '.jpg'), bboxes)
         print("Error bbox number to filter : %d,  bbox number: %d"  %(error_bbox , train_bbox))
-        
 
     def __getitem__(self, index):
         im, gt, h, w = self.pull_item(index)
